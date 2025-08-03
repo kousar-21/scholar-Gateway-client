@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.ibb.co/wrKYmt2T/all-Student.jpg",
+    "text": "Join thousands of students mastering new skills with expert tutors around the world. Learn at your pace, anytime, anywhere.",
+    "button": {
+      "label": "Explore Courses",
+      "link": "courses"
+    }
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co/HfQRnPTZ/library.jpg",
+    "text": "Access a digital library filled with books, journals, and research tools designed to support your academic journey.",
+    "button": {
+      "label": "Browse Library",
+      "link": "library"
+    }
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co/JWq2Kqjs/scholar2.jpg",
+    "text": "Discover scholarships and funding opportunities tailored to your goals. Empower your education with financial support.",
+    "button": {
+      "label": "Find Scholarships",
+      "link": "scholarships"
+    }
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co/Z1kLPHf5/exploreclass.jpg",
+    "text": "Connect with mentors and peers in live virtual classrooms. Engage in collaborative learning from anywhere in the world.",
+    "button": {
+      "label": "Join a Class",
+      "link": "live-classes"
+    }
+  }
+]

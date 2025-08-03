@@ -1,0 +1,31 @@
+{
+  "id": 1,
+  "title": "Plan Your Academic Journey",
+  "subtitle": "Track your progress, manage deadlines, and reach your educational goals with personalized planning tools.",
+  "features": [
+    {
+      "icon": "🎓",
+      "title": "Set Milestones",
+      "description": "Define your academic goals semester by semester."
+    },
+    {
+      "icon": "🗓️",
+      "title": "Manage Deadlines",
+      "description": "Stay ahead with reminders for application deadlines and exams."
+    },
+    {
+      "icon": "📈",
+      "title": "Track Progress",
+      "description": "Visualize completed courses and scholarships applied."
+    },
+    {
+      "icon": "📚",
+      "title": "Smart Recommendations",
+      "description": "Get suggestions for courses, scholarships, and learning resources."
+    }
+  ],
+  "cta": {
+    "label": "Start Planning",
+    "link": "journey-planner"
+  }
+}

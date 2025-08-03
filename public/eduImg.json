@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "url": "https://i.ibb.co/45WrjS3/cap.jpg",
+        "label": "Graduation Success"
+    },
+    {
+        "id": 2,
+        "url": "https://i.ibb.co/ymRmLK6r/smartlearning.jpg",
+        "label": "Smart Learning"
+    },
+    {
+        "id": 3,
+        "url": "https://i.ibb.co/prQwVZQs/laptop.jpg",
+        "label": "Classroom Experience"
+    },
+    {
+        "id": 4,
+        "url": "https://i.ibb.co/spbpjfHt/tutor.jpg",
+        "label": "Expert Tutors"
+    },
+    {
+        "id": 5,
+        "url": "https://i.ibb.co/Lz4rb3QN/global.jpg",
+        "label": "Global Access"
+    },
+    {
+        "id": 6,
+        "url": "https://i.ibb.co/W4BjBm6n/uni1.jpg",
+        "label": "Campus Life"
+    },
+    {
+        "id": 7,
+        "url": "https://i.ibb.co/CpBBTXB7/success.jpg",
+        "label": "Certified Programs"
+    },
+    {
+        "id": 8,
+        "url": "https://i.ibb.co/d00Rthb8/uni2.jpg",
+        "label": "Academic Excellence"
+    }
+]
