@@ -71,12 +71,11 @@ If you are developing a production application, we recommend using TypeScript wi
 ## How to Run Locally
 
 1. Clone the repository
-git clone 
-cd eduBridge
+- git clone https://github.com/kousar-21/scholar-Gateway-client
+-- cd eduBridge
 
 2. Install dependencies
-
-npm install
+- npm install
 
 3. Setup Firebase
 4. Run the development server locally
