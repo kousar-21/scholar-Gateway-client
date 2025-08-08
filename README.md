@@ -68,6 +68,19 @@ If you are developing a production application, we recommend using TypeScript wi
 - [@Tanstack](https://tanstack.com/query/latest/docs/framework/react/installation)
 
 
+## How to Run Locally
+
+1. Clone the repository
+git clone 
+cd eduBridge
+
+2. Install dependencies
+
+npm install
+
+3. Setup Firebase
+4. Run the development server locally
+npm run dev
 
 
 
