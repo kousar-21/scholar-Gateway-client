@@ -46,6 +46,27 @@ If you are developing a production application, we recommend using TypeScript wi
 - Full platform access and insights
 
 
+# Technologies Used
+
+- React 19 (SPA framework)
+- Tailwind CSS & DaisyUI (UI styling and responsive design)
+- Framer Motion / Motion (animations)
+- Swiper.js (sliders & carousels)
+- React Hook Form (form management)
+- React Router v7 (routing)
+- TanStack Query v5 (data fetching & caching)
+- Axios (HTTP requests)
+- Firebase (authentication & hosting)
+- Stripe (@stripe/react-stripe-js, @stripe/stripe-js) (payment gateway)
+- React Hot Toast & SweetAlert2 (alerts & notifications)
+- React Icons & React Tooltip (icons & tooltips)
+- React Spinners (loading states)
+- Lottie React (animations)
+
+
+
+
+
 # NPM Packages:
 - [@React](https://vite.dev/guide/)
 - [@React-Router](https://reactrouter.com/home)
@@ -83,5 +104,11 @@ If you are developing a production application, we recommend using TypeScript wi
 - npm run dev
 
 
+# Admin / Moderator Test Credentials
+## Admin
+- Email: maldini@milan.com
+- Password: Ma@1234
 
-
+## Moderator
+- Email: ka@ka.com
+- Password: Ka@1234
