@@ -6,7 +6,9 @@ import Footer from '../Components/HomeComponent/Footer/Footer';
 const MainLayouts = () => {
     return (
         <div>
-            <Navbar></Navbar>
+            <div className='sticky top-0 z-10 overflow-visible'>
+                <Navbar></Navbar>
+            </div>
             <div className='bg-orange-50 pb-10'>
                 <Outlet></Outlet>
             </div>

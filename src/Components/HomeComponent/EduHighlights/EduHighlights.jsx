@@ -27,7 +27,7 @@ const EduHighlights = () => {
                         <div><span className="loading loading-dots loading-xl text-error"></span></div>
                     ) : (
                         <motion.div
-                            className='flex gap-10 w-max'
+                            className='flex gap-10 w-max overflow-hidden'
                             
                             animate={{x: ['0%', "-50%"]}}
                             transition= {{ repeat: Infinity,repeatType: "loop", duration: 20, ease: 'linear' }}
