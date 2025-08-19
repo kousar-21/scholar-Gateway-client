@@ -34,8 +34,8 @@ const TopScholars = () => {
     console.log("top scholarshipData", topScholarship)
 
     return (
-        <div className='bg-orange-50 rounded-2xl px-5 md:px-10 lg:px-20 py-12'>
-            <h1 className='text-3xl lg:text-4xl font-bold text-blue-800 text-center'>Top Scholarships</h1>
+        <div className='bg-orange-50 dark:bg-gray-600 dark:text-white px-5 md:px-10 lg:px-20 py-12'>
+            <h1 className='text-3xl lg:text-4xl font-bold text-center'>Top Scholarships</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pt-10 gap-6">
                 {
                     topScholarship.map((scholarship, index) => (

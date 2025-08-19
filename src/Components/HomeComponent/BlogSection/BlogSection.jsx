@@ -9,15 +9,15 @@ const blogs = [
 const BlogSection = () => {
     return (
         <div>
-            <section className="px-5 md:px-10 lg:px-20 py-12 bg-orange-50">
+            <section className="px-5 md:px-10 lg:px-20 py-12 bg-orange-50 dark:bg-gray-600 dark:text-white">
                 <div className="max-w-6xl mx-auto px-6 text-center">
                     <h2 className="text-3xl font-bold mb-12">Resources & Guides</h2>
                     <div className="grid md:grid-cols-3 gap-8">
                         {blogs.map((b, idx) => (
-                            <div key={idx} className="p-6 bg-gray-100 rounded-2xl shadow hover:shadow-lg transition">
+                            <div key={idx} className="p-6 bg-gray-100 dark:bg-gray-700 dark:text-white rounded-2xl shadow hover:shadow-lg transition">
                                 <h3 className="text-xl font-semibold mb-2">{b.title}</h3>
-                                <p className="text-gray-600 mb-4">{b.desc}</p>
-                                <a href={b.link} className="text-blue-600 font-semibold hover:underline">Read More →</a>
+                                <p className="text-gray-600 dark:text-gray-300 mb-4">{b.desc}</p>
+                                <a href={b.link} className="text-blue-600 dark:text-primary font-semibold hover:underline">Read More →</a>
                             </div>
                         ))}
                     </div>

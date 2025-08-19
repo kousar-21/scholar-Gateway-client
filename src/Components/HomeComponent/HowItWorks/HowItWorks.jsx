@@ -10,15 +10,15 @@ const steps = [
 
 const HowItWorks = () => {
   return (
-    <section className="py-12 bg-orange-50">
+    <section className="py-12 bg-orange-50 dark:bg-gray-600 dark:text-white">
       <div className="px-5 md:px-10 lg:px-20 text-center">
         <h2 className="text-3xl font-bold mb-12">How It Works</h2>
         <div className="grid md:grid-cols-4 gap-8">
           {steps.map((step, idx) => (
-            <div key={idx} className="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+            <div key={idx} className="bg-white dark:bg-gray-700 dark:text-white p-6 rounded-2xl shadow hover:shadow-lg transition">
               <div className="text-blue-600 mb-4 flex justify-center">{step.icon}</div>
               <h3 className="font-semibold text-lg">{step.title}</h3>
-              <p className="text-gray-600 mt-2">{step.desc}</p>
+              <p className="text-gray-600 dark:text-gray-300 mt-2">{step.desc}</p>
             </div>
           ))}
         </div>

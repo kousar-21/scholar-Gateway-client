@@ -17,10 +17,10 @@ const EduHighlights = () => {
 
     // console.log(items)
     return (
-        <div className='bg-orange-50 px-5 md:px-10 lg:px-20 py-12'>
-            <h1 className='md:text-4xl text-2xl font-extrabold text-blue-800 pt-5 pb-8 text-center'>Education Highlights</h1>
+        <div className='bg-orange-50 dark:bg-gray-600 dark:text-white px-5 md:px-10 lg:px-20 py-12'>
+            <h1 className='md:text-4xl text-2xl font-extrabold pt-5 pb-8 text-center'>Education Highlights</h1>
             <div
-                className='overflow-hidden w-full bg-orange-50 py-5'
+                className='overflow-hidden w-full bg-orange-50 dark:bg-gray-600 dark:text-white py-5'
             >
                 {
                     !items || items.length === 0 ? (
@@ -43,7 +43,7 @@ const EduHighlights = () => {
                             {[...items, ...items].map((item, index) => (
                                 <div key={index} className='flex flex-col items-center max-w-[150px] flex-shrink-0'>
                                     <img src={item.url} alt={item.label} className='w-24 h-24 object-cover shadow rounded-lg' />
-                                    <p className='mt-2 text-sm text-gray-600 font-semibold text-center'>{item.label}</p>
+                                    <p className='mt-2 text-sm text-gray-600 dark:text-gray-200 font-semibold text-center'>{item.label}</p>
                                 </div>
                             ))}
                         </motion.div>

@@ -3,15 +3,10 @@
 @plugin "daisyui";
 
 
-@plugin "daisyui/theme" {
-  name: "light";
-  default: true;
-  --color-primary: '#2563EB';
-  --color-secondary: '#10B981';
-  --color-info: '#3B82F6';
-
-}
-
+@plugin "daisyui" {
+    themes: all;
+  }
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 
 * {

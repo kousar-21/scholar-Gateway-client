@@ -52,7 +52,7 @@ const ScholarshipDetails = () => {
             {
                 !scholarship || scholarship.length === 0 ? (<Loader></Loader>) : (
                     <div className="px-4 py-8 md:px-16 lg:px-24">
-                        <h1 className="text-3xl font-bold text-center text-blue-800 mb-6">
+                        <h1 className="text-3xl font-bold text-center text-blue-800 dark:text-primary mb-6">
                             {scholarship.universityName}
                         </h1>
 
@@ -66,7 +66,7 @@ const ScholarshipDetails = () => {
 
 
                             {/* Right: Scholarship Details */}
-                            <div className="flex-1 space-y-2 text-gray-700">
+                            <div className="flex-1 space-y-2 text-gray-700 dark:text-gray-200">
                                 <p><strong>Category:</strong> {scholarship.scholarshipCategory}</p>
                                 <p><strong>Location:</strong> {scholarship.city}, {scholarship.country}</p>
                                 <p><strong>Deadline:</strong> {scholarship.applicationDeadline}</p>
@@ -100,7 +100,7 @@ const ScholarshipDetails = () => {
                         {/* Reviews Section */}
                         {reviews && reviews.length > 0 && (
                             <div className="mt-12">
-                                <h2 className="text-2xl font-bold mb-4 text-blue-500">What Students Say</h2>
+                                <h2 className="text-2xl font-bold mb-4 text-blue-500 dark:text-primary">What Students Say</h2>
                                 <div className='w-2/3 mx-auto py-10'>
                                     <Swiper spaceBetween={20} slidesPerView={1}
                                         modules={[Navigation, Pagination, Autoplay]}
@@ -111,15 +111,15 @@ const ScholarshipDetails = () => {
                                     >
                                         {reviews.map((review, idx) => (
                                             <SwiperSlide key={idx}>
-                                                <div className="bg-white p-5  w-2/3 mx-auto shadow-md rounded-xl h-full flex flex-col justify-between">
+                                                <div className="bg-white dark:bg-gray-700 dark:text-white p-5  w-2/3 mx-auto shadow-md rounded-xl h-full flex flex-col justify-between">
                                                     <div className="flex items-center gap-3 mb-3">
                                                         <img src={review.userImage} alt={review.userName} className="w-12 h-12 rounded-full" />
                                                         <div>
                                                             <p className="font-semibold">{review.userName}</p>
-                                                            <p className="text-sm text-gray-500">{review.reviewDate}</p>
+                                                            <p className="text-sm text-gray-500 dark:text-gray-200">{review.reviewDate}</p>
                                                         </div>
                                                     </div>
-                                                    <p className="mb-2 text-sm text-gray-700">"{review.reviewComment}"</p>
+                                                    <p className="mb-2 text-sm text-gray-700 dark:text-gray-200">"{review.reviewComment}"</p>
                                                     <p className="text-yellow-500 flex items-center">
                                                         <FaStar className="mr-1" />
                                                         {review.reviewRating}/5

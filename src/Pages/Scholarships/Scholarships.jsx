@@ -31,7 +31,7 @@ const Scholarships = () => {
     console.log("all scholarshipData", scholarshipData)
     return (
         <div className="px-4 py-8 md:px-16 lg:px-24">
-            <h1 className="text-3xl font-bold text-center text-blue-800 mb-6">All Scholarships</h1>
+            <h1 className="text-3xl font-bold text-center text-blue-800 dark:text-primary mb-6">All Scholarships</h1>
 
 
 

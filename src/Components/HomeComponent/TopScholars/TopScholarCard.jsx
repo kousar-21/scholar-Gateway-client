@@ -7,7 +7,7 @@ const TopScholarCard = ({ scholarship }) => {
     // const { rating } = useAverageReview(scholarship._id)
     return (
         <div>
-            <div className='bg-orange-50 shadow-xl rounded-xl flex flex-col h-full'>
+            <div className='bg-orange-50 dark:bg-gray-700 dark:text-white shadow-xl rounded-xl flex flex-col h-full'>
                 <img
                     src={scholarship.universityImage}
                     alt={scholarship.universityName}
@@ -17,7 +17,7 @@ const TopScholarCard = ({ scholarship }) => {
 
 
 
-                    <p className='text-sm text-gray-600 mb-1'>
+                    <p className='text-sm text-gray-600 dark:text-gray-300 mb-1'>
                         <strong>Description:</strong> <br /> {scholarship.description || 'N/A'}
                     </p>
 

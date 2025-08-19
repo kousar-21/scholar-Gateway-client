@@ -12,7 +12,7 @@ const testimonials = [
 
 const Testimonials = () => {
     return (
-        <section className="px-5 md:px-10 lg:px-20 py-12 bg-orange-50">
+        <section className="px-5 md:px-10 lg:px-20 py-12 bg-orange-50 dark:bg-gray-600 dark:text-white">
             <div className="max-w-4xl mx-auto text-center px-6">
                 <h2 className="text-3xl font-bold mb-12">What Students Say</h2>
                 <Swiper
@@ -23,10 +23,10 @@ const Testimonials = () => {
                     autoplay>
                     {testimonials.map((t, idx) => (
                         <SwiperSlide key={idx}>
-                            <div className="p-8 bg-white rounded-2xl shadow">
+                            <div className="p-8 bg-white dark:bg-gray-700 dark:text-white rounded-2xl shadow-2xl">
                                 <p className="italic text-lg mb-4">“{t.review}”</p>
                                 <h4 className="font-semibold">{t.name}</h4>
-                                <p className="text-sm text-gray-500">{t.university}</p>
+                                <p className="text-sm text-gray-500 dark:text-gray-300">{t.university}</p>
                             </div>
                         </SwiperSlide>
                     ))}

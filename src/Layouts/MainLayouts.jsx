@@ -9,7 +9,7 @@ const MainLayouts = () => {
             <div className='sticky top-0 z-10 overflow-visible'>
                 <Navbar></Navbar>
             </div>
-            <div className='bg-orange-50 pb-10'>
+            <div className='bg-orange-50 dark:bg-gray-600 dark:text-white pb-10'>
                 <Outlet></Outlet>
             </div>
             <Footer></Footer>

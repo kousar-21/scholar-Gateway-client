@@ -8,6 +8,7 @@ import 'react-tooltip/dist/react-tooltip.css'
 import { Tooltip } from 'react-tooltip'
 import toast from 'react-hot-toast';
 import Swal from 'sweetalert2';
+import Theme from '../../handleThemeChange/Theme';
 
 const Navbar = () => {
 
@@ -45,7 +46,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className="navbar bg-orange-100 text-primary shadow-sm px-5 md:px-10 lg:px-20">
+        <div className="navbar bg-orange-100 dark:bg-gray-700 dark:text-white text-primary shadow-sm px-5 md:px-10 lg:px-20">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost md:hidden">
@@ -59,6 +60,12 @@ const Navbar = () => {
                 </div>
                 <div>
                     <WebLogo></WebLogo>
+                </div>
+                <div className='pl-2'>
+                    {
+                        /* Theme Toggle */
+                    }
+                    <Theme></Theme>
                 </div>
             </div>
 

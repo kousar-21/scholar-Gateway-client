@@ -3,7 +3,7 @@ import React from 'react';
 const Contact = () => {
     return (
         <div>
-            <section className="px-5 md:px-10 lg:px-20 py-12 bg-orange-50">
+            <section className="px-5 md:px-10 lg:px-20 py-12 bg-orange-50 dark:bg-gray-600 dark:text-white">
                 <div className="max-w-4xl mx-auto px-6 text-center">
                     <h2 className="text-3xl font-bold mb-6">Get in Touch</h2>
                     <p className="text-gray-600 mb-10">
@@ -27,12 +27,12 @@ const Contact = () => {
                         />
                         <button
                             type="submit"
-                            className="px-6 py-3 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-500 transition"
+                            className="px-6 py-3 bg-blue-600 dark:bg-primary text-white rounded-xl font-semibold hover:bg-blue-500 transition"
                         >
                             Send Message
                         </button>
                     </form>
-                    <div className="mt-8 text-gray-600">
+                    <div className="mt-8 text-gray-600 dark:text-gray-200">
                         📍 Dhaka, Bangladesh | 📧 support@scholargateway.com
                     </div>
                 </div>
