@@ -61,7 +61,7 @@ const AllReviews = () => {
                                 {reviews.map((review) => (
                                     <div
                                         key={review._id}
-                                        className="bg-orange-100 shadow-md rounded-2xl p-5 border-none hover:shadow-xl transition-all duration-300"
+                                        className="bg-orange-100 dark:bg-gray-800 dark:text-white shadow-md rounded-2xl p-5 border-none hover:shadow-xl transition-all duration-300"
                                     >
                                         <div className="flex items-center gap-3 mb-4">
                                             <img
@@ -71,21 +71,21 @@ const AllReviews = () => {
                                             />
                                             <div>
                                                 <h3 className="font-bold">{review.userName}</h3>
-                                                <p className="text-sm text-gray-500">{review.reviewDate}</p>
+                                                <p className="text-sm text-gray-500 dark:text-gray-400">{review.reviewDate}</p>
                                             </div>
                                         </div>
 
                                         <div className="mb-3">
                                             <p className="font-medium text-primary">{review.universityName}</p>
-                                            <p className="text-sm text-gray-600">{review.subjectCategory}</p>
+                                            <p className="text-sm text-gray-600 dark:text-gray-300">{review.subjectCategory}</p>
                                         </div>
 
                                         <div className="flex items-center gap-1 text-yellow-500 mb-3">
                                             <FaStar />
-                                            <span className='text-black'>{review.reviewRating}</span>
+                                            <span className='text-black dark:text-gray-200'>{review.reviewRating}</span>
                                         </div>
 
-                                        <p className="text-gray-700 mb-4">{review.reviewComment}</p>
+                                        <p className="text-gray-700 dark:text-gray-300 mb-4">{review.reviewComment}</p>
 
                                         <button
                                             onClick={() => handleDelete(review._id)}
