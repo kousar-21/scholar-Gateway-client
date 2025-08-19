@@ -12,7 +12,7 @@ const testimonials = [
 
 const Testimonials = () => {
     return (
-        <section className="py-20 bg-gray-50">
+        <section className="px-5 md:px-10 lg:px-20 py-12 bg-orange-50">
             <div className="max-w-4xl mx-auto text-center px-6">
                 <h2 className="text-3xl font-bold mb-12">What Students Say</h2>
                 <Swiper

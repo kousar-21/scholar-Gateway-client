@@ -28,6 +28,8 @@ import EditApplication from "../Pages/Dashboard/MyApplication/component/EditAppl
 import DashboardHome from "../Pages/Dashboard/DashboardHome/DashboardHome";
 import AdminRoute from "../PrivateRoutes/AdminRoute";
 import RestrictedRoute from "../PrivateRoutes/RestrictedRoute";
+import AboutUs from "../Pages/AboutUs/AboutUs";
+import Blogs from "../Pages/Blogs/Blogs";
 
 
 export const router = createBrowserRouter([
@@ -45,8 +47,16 @@ export const router = createBrowserRouter([
         element: <Scholarships></Scholarships>
       },
       {
+        path: '/aboutUs',
+        element: <AboutUs></AboutUs>
+      },
+      {
+        path: '/blog',
+        element: <Blogs></Blogs>
+      },
+      {
         path: "/scholarship/:id",
-        element: <PrivateRoutes><ScholarshipDetails></ScholarshipDetails></PrivateRoutes>
+        element: <ScholarshipDetails></ScholarshipDetails>
       },
       {
         path: "/apply-scholarship/:id",

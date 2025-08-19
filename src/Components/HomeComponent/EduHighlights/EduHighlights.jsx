@@ -17,7 +17,7 @@ const EduHighlights = () => {
 
     // console.log(items)
     return (
-        <div className='bg-orange-100 md:my-10 pt-5 pb-16'>
+        <div className='bg-orange-50 px-5 md:px-10 lg:px-20 py-12'>
             <h1 className='md:text-4xl text-2xl font-extrabold text-blue-800 pt-5 pb-8 text-center'>Education Highlights</h1>
             <div
                 className='overflow-hidden w-full bg-orange-50 py-5'

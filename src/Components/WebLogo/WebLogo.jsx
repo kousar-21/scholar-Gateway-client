@@ -8,7 +8,7 @@ const WebLogo = () => {
             <div>
                 <Link to='/'><img className='size-14 rounded-2xl' src={SGlogo} alt="" /></Link>
             </div>
-            <Link to='/'><div className='text-2xl hidden md:block text-primary font-extrabold'>ScholarGateway</div></Link>
+            <Link to='/'><div className='text-2xl hidden lg:block text-primary font-extrabold'>ScholarGateway</div></Link>
         </div>
     );
 };

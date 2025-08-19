@@ -3,7 +3,7 @@ import React from 'react';
 const Contact = () => {
     return (
         <div>
-            <section className="py-20 bg-gray-100">
+            <section className="px-5 md:px-10 lg:px-20 py-12 bg-orange-50">
                 <div className="max-w-4xl mx-auto px-6 text-center">
                     <h2 className="text-3xl font-bold mb-6">Get in Touch</h2>
                     <p className="text-gray-600 mb-10">

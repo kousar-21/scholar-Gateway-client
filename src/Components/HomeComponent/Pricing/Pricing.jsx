@@ -21,7 +21,7 @@ const plans = [
 const Pricing = () => {
     return (
         <div>
-            <section className="py-20 bg-white">
+            <section className="px-5 md:px-10 lg:px-20 py-12 bg-orange-50">
                 <div className="max-w-6xl mx-auto text-center px-6">
                     <h2 className="text-3xl font-bold mb-12">Membership Plans</h2>
                     <div className="grid md:grid-cols-2 gap-8">

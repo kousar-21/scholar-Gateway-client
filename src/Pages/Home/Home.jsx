@@ -1,7 +1,4 @@
 import React from 'react';
-import Navbar from '../../Components/HomeComponent/Navbar/Navbar';
-import Footer from '../../Components/HomeComponent/Footer/Footer';
-import Banner from '../../Components/HomeComponent/Banner/Banner';
 import EduHighlights from '../../Components/HomeComponent/EduHighlights/EduHighlights';
 import AcademicJourney from '../../Components/HomeComponent/AcademicJourney/AcademicJourney';
 import TopScholars from '../../Components/HomeComponent/TopScholars/TopScholars';
@@ -13,12 +10,13 @@ import Partners from '../../Components/HomeComponent/Partners/Partners';
 import Newsletter from '../../Components/HomeComponent/Newsletter/Newsletter';
 import Pricing from '../../Components/HomeComponent/Pricing/Pricing';
 import Contact from '../../Components/HomeComponent/Contact/Contact';
+import Banners from '../../Components/HomeComponent/Banners/Banners';
 
 const Home = () => {
     return (
         <div>
 
-            <Banner></Banner>
+            <Banners></Banners>
             <HowItWorks></HowItWorks>
             <TopScholars></TopScholars>
             <AcademicJourney></AcademicJourney>

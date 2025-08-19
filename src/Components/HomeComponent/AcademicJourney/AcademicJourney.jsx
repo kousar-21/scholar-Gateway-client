@@ -12,7 +12,7 @@ const AcademicJourney = () => {
     const eduData = datas.features;
     // console.log(eduData)
     return (
-        <div className='bg-orange-100 md:mx-20 md:my-10 mx-5 my-5 rounded-2xl py-10 px-5 md:px-10 lg:px-20'>
+        <div className='bg-orange-50 rounded-2xl px-5 md:px-10 lg:px-20 py-12'>
             <div className='text-center mb-10'>
                 <h2 className='text-3xl lg:text-4xl font-bold text-blue-800'>{datas.title}</h2>
                 <p className='text-gray-700 mt-2'>{datas.subtitle}</p>

@@ -1,15 +1,15 @@
 import React from 'react';
 
 const blogs = [
-    { title: "Top 10 Scholarships in 2025", desc: "Explore the best fully-funded scholarships this year.", link: "#" },
-    { title: "How to Write a Winning Application", desc: "Tips & tricks for writing an impressive application.", link: "#" },
-    { title: "Mistakes to Avoid", desc: "Common mistakes students make and how to fix them.", link: "#" },
+    { title: "Top 10 Scholarships in 2025", desc: "Explore the best fully-funded scholarships this year.", link: "/blog" },
+    { title: "How to Write a Winning Application", desc: "Tips & tricks for writing an impressive application.", link: "/blog" },
+    { title: "Mistakes to Avoid", desc: "Common mistakes students make and how to fix them.", link: "/blog" },
 ];
 
 const BlogSection = () => {
     return (
         <div>
-            <section className="py-20 bg-white">
+            <section className="px-5 md:px-10 lg:px-20 py-12 bg-orange-50">
                 <div className="max-w-6xl mx-auto px-6 text-center">
                     <h2 className="text-3xl font-bold mb-12">Resources & Guides</h2>
                     <div className="grid md:grid-cols-3 gap-8">

@@ -10,7 +10,7 @@ const partners = [
 const Partners = () => {
     return (
         <div>
-            <section className="py-16 bg-gray-50">
+            <section className="px-5 md:px-10 lg:px-20 py-12 bg-orange-50">
                 <div className="max-w-6xl mx-auto text-center px-6">
                     <h2 className="text-2xl md:text-3xl font-bold mb-8">
                         Trusted by Top Universities

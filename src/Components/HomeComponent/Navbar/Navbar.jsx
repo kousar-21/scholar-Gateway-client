@@ -16,7 +16,14 @@ const Navbar = () => {
     const links = <>
         <li><NavLink to='/'>Home</NavLink></li>
         <li><NavLink to='/allScholarship'>All Scholarship</NavLink></li>
-        <li><NavLink to='/dashboardLayout'>Dashboard</NavLink></li>
+        <li><NavLink to='/aboutUs'>About Us</NavLink></li>
+        {
+            user && <>
+                <li><NavLink to='/dashboardLayout'>Dashboard</NavLink></li>
+                <li><NavLink to='/blog'>Blog</NavLink></li>
+            </>
+        }
+
 
     </>
 
@@ -38,7 +45,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className="navbar bg-orange-100 text-primary shadow-sm md:px-10">
+        <div className="navbar bg-orange-100 text-primary shadow-sm px-5 md:px-10 lg:px-20">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost md:hidden">
