@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import EduHighlights from '../../Components/HomeComponent/EduHighlights/EduHighlights';
 import AcademicJourney from '../../Components/HomeComponent/AcademicJourney/AcademicJourney';
 import TopScholars from '../../Components/HomeComponent/TopScholars/TopScholars';
@@ -13,6 +13,10 @@ import Contact from '../../Components/HomeComponent/Contact/Contact';
 import Banners from '../../Components/HomeComponent/Banners/Banners';
 
 const Home = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <div>
 

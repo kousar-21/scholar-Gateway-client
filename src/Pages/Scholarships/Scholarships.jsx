@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import useAxiosSecure from '../../Hooks/useAxiosSecure';
 import { useQuery } from '@tanstack/react-query';
 import Spinner from '../../Spinner/Spinner';
@@ -10,6 +10,10 @@ const Scholarships = () => {
     const axiosSecure = useAxiosSecure();
     const [searchText, setSearchText] = useState('');
     const [searchValue, setSearchValue] = useState('');
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     const { isLoading, data: scholarshipData = [] } = useQuery({
         queryKey: ['allScholarship', searchValue],
@@ -47,7 +51,7 @@ const Scholarships = () => {
                 <button type="submit" className="btn btn-primary">Search</button>
             </form>
 
-            {isLoading && <Spinner></Spinner> }
+            {isLoading && <Spinner></Spinner>}
 
 
             {/* Scholarships */}

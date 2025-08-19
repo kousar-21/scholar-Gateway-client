@@ -26,7 +26,7 @@ const AppliedDetails = () => {
 
     return (
         <div className='py-10 mx-5'>
-            <div className="max-w-3xl mx-auto p-6 shadow-lg bg-orange-100 rounded-2xl space-y-4">
+            <div className="max-w-3xl mx-auto p-6 shadow-lg bg-orange-100 dark:bg-gray-700 dark:text-white rounded-2xl space-y-4">
                 <Link to="/dashboardLayout/my-applications" className="inline-flex items-center gap-2 text-blue-600">
                     <FaArrowLeft /> Back to Applications
                 </Link>

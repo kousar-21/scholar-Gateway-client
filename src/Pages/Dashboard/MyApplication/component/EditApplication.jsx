@@ -77,7 +77,7 @@ const EditApplication = () => {
 
     return (
         <div className='py-10  mx-5'>
-            <div className="p-6 bg-orange-100 rounded-2xl max-w-4xl mx-auto">
+            <div className="p-6 bg-orange-100 dark:bg-gray-700 dark:text-white rounded-2xl max-w-4xl mx-auto">
                 <Link to="/dashboardLayout/my-applications" className="inline-flex items-center gap-2 text-blue-600">
                     <FaArrowLeft /> Back to Applications
                 </Link>

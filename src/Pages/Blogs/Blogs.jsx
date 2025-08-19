@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 // Sample blogs data
 const blogsData = [
@@ -102,6 +102,10 @@ const blogsData = [
 
 const Blogs = () => {
     const [selectedBlog, setSelectedBlog] = useState(null);
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <section className="bg-orange-50 px-5 dark:bg-gray-600 dark:text-white md:px-10 lg:px-20 py-12" id="blogs">

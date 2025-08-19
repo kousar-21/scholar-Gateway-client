@@ -130,11 +130,11 @@ const PaymentGateway = () => {
 
     return (
         <div className='py-10 px-10'>
-            <div className="max-w-md mx-auto p-4 bg-white shadow rounded">
+            <div className="max-w-md mx-auto p-4 bg-white dark:bg-gray-700 dark:text-white shadow rounded">
                 <h2 className="text-lg font-bold mb-4 text-center text-blue-600">Complete Your Payment</h2>
 
                 <form onSubmit={handleSubmit}>
-                    <CardElement className="border p-2 mb-4 rounded"></CardElement>
+                    <CardElement className="border dark:text-white p-2 mb-4 rounded"></CardElement>
 
                     <button type="submit" className="btn btn-primary disabled:opacity-70 disabled:cursor-not-allowed border-none hover:bg-orange-500 text-white w-full" disabled={!stripe || isPaymentComplete}>
                         Pay Now  ${amount}

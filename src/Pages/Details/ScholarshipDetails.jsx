@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router';
 import useAxiosSecure from '../../Hooks/useAxiosSecure';
 import { useQuery } from '@tanstack/react-query';
@@ -12,10 +12,14 @@ import 'swiper/css/pagination';
 import Loader from '../../Spinner/Loader';
 
 const ScholarshipDetails = () => {
-    
+
     const { id } = useParams();
     const axiosSecure = useAxiosSecure();
     const navigate = useNavigate();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     const { isLoading, data } = useQuery({
         queryKey: ["scholarshipDetails", id],
@@ -25,7 +29,7 @@ const ScholarshipDetails = () => {
         }
     })
 
-    const { data: allReviews,isLoading:isReviewLoading } = useQuery({
+    const { data: allReviews, isLoading: isReviewLoading } = useQuery({
         queryKey: ["reviews", id],
         queryFn: async () => {
             const result = await axiosSecure.get(`/reviews/average/${id}`)

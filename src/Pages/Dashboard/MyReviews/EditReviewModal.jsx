@@ -29,7 +29,7 @@ const EditReviewModal = ({ review, onClose, onUpdated }) => {
     return (
         <div>
             <div className="fixed inset-0 bg-black/40 flex items-center justify-center z-50">
-                <div className="bg-white p-6 rounded-lg w-full max-w-lg relative">
+                <div className="bg-white dark:bg-gray-600 dark:text-white p-6 rounded-lg w-full max-w-lg relative">
                     <button className="absolute right-2 top-2 text-xl" onClick={onClose}>✕</button>
                     <h3 className="text-lg font-semibold mb-4">Edit Review</h3>
 

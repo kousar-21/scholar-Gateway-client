@@ -1,6 +1,7 @@
 import React from 'react';
 import WebLogo from '../../WebLogo/WebLogo';
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { NavLink } from 'react-router';
 
 const Footer = () => {
     return (
@@ -21,21 +22,22 @@ const Footer = () => {
             <div className='grid md:grid-cols-4 grid-cols-2 gap-5'>
                 <div>
                     <h1 className='text-xxl font-bold mb-3'>Academics</h1>
-                    <p className='text-sm text-gray-600 dark:text-gray-300 mb-2'>Programming</p>
+                    <NavLink to='/blog'><p className='text-sm text-gray-600 dark:text-gray-300 mb-2'>Programming</p></NavLink>
                     <p className='text-sm text-gray-600 dark:text-gray-300 mb-2'>Art & Design</p>
                     <p className='text-sm text-gray-600 dark:text-gray-300 mb-2'>Photography</p>
                     <p className='text-sm text-gray-600 dark:text-gray-300 mb-2'>Business</p>
                 </div>
                 <div>
                     <h1 className='text-xxl font-bold mb-3'>Support</h1>
+                    <NavLink to="/aboutUs"><p className='text-sm text-gray-600 dark:text-gray-300 mb-2'>Contacts</p></NavLink>
                     <p className='text-sm text-gray-600 dark:text-gray-300 mb-2'>Help Center</p>
                     <p className='text-sm text-gray-600 dark:text-gray-300 mb-2'>FAQ</p>
                     <p className='text-sm text-gray-600 dark:text-gray-300 mb-2'>Security</p>
-                    <p className='text-sm text-gray-600 dark:text-gray-300 mb-2'>Contacts</p>
+                    
                 </div>
                 <div>
                     <h1 className='text-xxl font-bold mb-3'>Our Links</h1>
-                    <a href=""><p className='text-sm text-gray-600 dark:text-gray-300 mb-2'>About Us</p></a>
+                    <NavLink to="/aboutUs"><p className='text-sm text-gray-600 dark:text-gray-300 mb-2'>About Us</p></NavLink>
                     <a href=""><p className='text-sm text-gray-600 dark:text-gray-300 mb-2'>Courses</p></a>
                     <a href=""><p className='text-sm text-gray-600 dark:text-gray-300 mb-2'>News</p></a>
                     <a href=""><p className='text-sm text-gray-600 dark:text-gray-300 mb-2'>Privacy Policy</p></a>
