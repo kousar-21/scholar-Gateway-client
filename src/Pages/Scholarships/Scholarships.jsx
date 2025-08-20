@@ -5,22 +5,25 @@ import Spinner from '../../Spinner/Spinner';
 import { NavLink } from 'react-router';
 import { FaStar } from 'react-icons/fa';
 import ScholarshipCard from './ScholarshipCard';
+import Loader from '../../Spinner/Loader';
 
 const Scholarships = () => {
     const axiosSecure = useAxiosSecure();
     const [searchText, setSearchText] = useState('');
     const [searchValue, setSearchValue] = useState('');
+    const [sortOption, setSortOption] = useState('recent');
 
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
 
-    const { isLoading, data: scholarshipData = [] } = useQuery({
-        queryKey: ['allScholarship', searchValue],
+    const { isLoading, isFetching, data: scholarshipData = [] } = useQuery({
+        queryKey: ['allScholarship', searchValue, sortOption],
         queryFn: async () => {
-            const result = await axiosSecure.get(`/scholarships?search=${searchValue}`)
+            const result = await axiosSecure.get(`/scholarships?search=${searchValue}&sort=${sortOption}`)
             return result.data
-        }
+        },
+        keepPreviousData: true,
     })
 
     if (isLoading) {
@@ -38,8 +41,7 @@ const Scholarships = () => {
             <h1 className="text-3xl font-bold text-center text-blue-800 dark:text-primary mb-6">All Scholarships</h1>
 
 
-
-            {/* Search */}
+            {/* Search + Sort */}
             <form onSubmit={handleSearch} className="flex justify-center gap-4 mb-10 flex-wrap">
                 <input
                     type="text"
@@ -49,9 +51,21 @@ const Scholarships = () => {
                     className="input input-bordered w-full md:w-96"
                 />
                 <button type="submit" className="btn btn-primary">Search</button>
+
+                {/* NEW Sort Dropdown */}
+                <select
+                    value={sortOption}
+                    onChange={(e) => setSortOption(e.target.value)}
+                    className="select select-bordered"
+                >
+                    <option value="recent">Recent Posted</option>
+                    <option value="feesAsc">Application Fees (Low → High)</option>
+                    <option value="feesDesc">Application Fees (High → Low)</option>
+                </select>
             </form>
 
-            {isLoading && <Spinner></Spinner>}
+            {/* Loader when searching/sorting */}
+            {isFetching && <div className="flex justify-center my-6"><Loader></Loader></div>}
 
 
             {/* Scholarships */}
