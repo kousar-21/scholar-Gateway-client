@@ -99,6 +99,16 @@ const AddScholarship = () => {
                     {errors.city?.type === "required" && <p className='text-red-500 text-sm'>University City is Required</p>}
 
 
+                    {/* University Location latitude */}
+                    <label className='label font-medium'>University Location latitude</label>
+                    <input type="number" placeholder='University Location latitude' className='input input-bordered w-full' {...register('latitude', { required: true, valueAsNumber: true, validate: value => value === undefined || !isNaN(value) || "Must be a Number" })} />
+                    {errors.latitude?.type === "required" && <p className='text-red-500 text-sm'>University Location latitude is Required</p>}
+
+                    {/* University Location longitude */}
+                    <label className='label font-medium'>University Location longitude</label>
+                    <input type="number" placeholder='University World Rank' className='input input-bordered w-full' {...register('longitude', { required: true, valueAsNumber: true, validate: value => value === undefined || !isNaN(value) || "Must be a Number" })} />
+                    {errors.longitude?.type === "required" && <p className='text-red-500 text-sm'>University Location longitude is Required</p>}
+
                     {/* world Rank */}
                     <label className='label font-medium'>University World Rank</label>
                     <input type="number" placeholder='University World Rank' className='input input-bordered w-full' {...register('worldRank', { required: true, valueAsNumber: true, validate: value => value === undefined || !isNaN(value) || "Must be a Number" })} />
