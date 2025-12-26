@@ -10,6 +10,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import Loader from '../../Spinner/Loader';
+import MapDisplay from './MapDisplay';
 
 const ScholarshipDetails = () => {
 
@@ -99,6 +100,13 @@ const ScholarshipDetails = () => {
                                     onClick={() => navigate(`/apply-scholarship/${scholarship._id}`, { state: { scholarship } })}
                                 >Apply for Scholarship</button>
                             </div>
+                        </div>
+
+                        {/* map section */}
+                        <div className="mt-12">
+                            <MapDisplay lat={scholarship.latitude}
+                                lng={scholarship.longitude}
+                                locationName={scholarship.city}></MapDisplay>
                         </div>
 
                         {/* Reviews Section */}
